@@ -118,7 +118,7 @@ export default function DonorPage() {
               {/* Every amount matters tag below card */}
               <div className="mt-5 text-center">
                 <span className="inline-block bg-[#f9ebdc] border border-[#FFAC33]/30 text-[#2D3E50] font-semibold text-sm px-5 py-2 rounded-full">
-                  🌟 Every amount matters — ₹10 to ₹10,000
+                  🌟 Every amount matters — ₹10 or ₹10,000
                 </span>
               </div>
             </div>
@@ -222,4 +222,4 @@ export default function DonorPage() {
       <Footer />
     </div>
   )
-}
+}  

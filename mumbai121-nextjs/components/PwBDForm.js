@@ -222,6 +222,21 @@ export default function PwBDForm() {
           className={inputClass(errors.skills)} />
       </FormField>
 
+      {/* pwbd certificate Upload */}
+      <FormField label="Upload Disability Certificate (PDF only)" required error={errors.resume}>
+        <label className="flex items-center gap-3 border-2 border-dashed border-[#FFAC33]/50 rounded-xl p-4 cursor-pointer hover:border-[#FFAC33] transition-colors">
+          <div className="w-10 h-10 bg-[#2D3E50] rounded-full flex items-center justify-center shrink-0">
+            <i className="fas fa-upload text-[#FFAC33] text-sm"></i>
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#2D3E50]">{fileName}</p>
+            <p className="text-xs text-gray-400">PDF only, max 5MB</p>
+          </div>
+          <input type="file" accept=".pdf" onChange={handleFile} className="hidden" />
+        </label>
+      </FormField>
+
+
       {/* Resume Upload */}
       <FormField label="Upload Resume (PDF only)" required error={errors.resume}>
         <label className="flex items-center gap-3 border-2 border-dashed border-[#FFAC33]/50 rounded-xl p-4 cursor-pointer hover:border-[#FFAC33] transition-colors">
